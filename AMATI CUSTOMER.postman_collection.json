@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "fa5e29bf-9f1b-4426-969b-0f6e20221e3d",
+		"name": "AMATI CUSTOMER",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34692464"
+	},
+	"item": [
+		{
+			"name": "product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/customer/product/{producerBatchProductQrCode}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"customer",
+						"product",
+						"{producerBatchProductQrCode}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cust producer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/customer/producer/{producerId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"customer",
+						"producer",
+						"{producerId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cust supplier",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "cust claim product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/customer/product-claim/{productClaimId}/product/{productId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"customer",
+						"product-claim",
+						"{productClaimId}",
+						"product",
+						"{productId}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

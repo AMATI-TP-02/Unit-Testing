@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "d1ff04b4-4685-48e9-8bb5-341809910555",
+		"name": "AMATI IMAGE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34692464"
+	},
+	"item": [
+		{
+			"name": "admin image supplier profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/image/supplier/profile",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"image",
+						"supplier",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin image supplier gallery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/image/supplier/gallery",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"image",
+						"supplier",
+						"gallery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin image warehouse profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/image/warehouse/profile",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"image",
+						"warehouse",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin image producer profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/image/producer/profile",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"image",
+						"producer",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "admin image producer gallery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/image/producer/gallery",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"image",
+						"producer",
+						"gallery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supplier image profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/supplier/image/profile",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"supplier",
+						"image",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supplier image product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/supplier/image/product",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"supplier",
+						"image",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "producer image profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/producer/image/profile",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"producer",
+						"image",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "producer image product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/producer/image/product",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"producer",
+						"image",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "warehouse image profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/warehouse/image/profile",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"warehouse",
+						"image",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
