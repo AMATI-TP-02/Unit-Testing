@@ -1,0 +1,760 @@
+{
+	"info": {
+		"_postman_id": "65c45123-e767-4ecf-b295-7a80e9df00df",
+		"name": "AMATI ADMIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34692464"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"adimuhamadfirmansyah@gmail.com\",\r\n  \"password\": \"AdiGantengAwokwok\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/admin/auth/login",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"admin",
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "logout",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/auth/logout",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"auth",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supplier",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ownerName\": \"Firmansyah\",\r\n  \"businessName\": \"Berkah Tani Jaya\",\r\n  \"noHp\": \"08123456789\",\r\n  \"avatarProfile\": \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\",\r\n  \"heroImage\": \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\",\r\n  \"imageGallery\": [\r\n    \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\",\r\n    \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\",\r\n    \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\"\r\n  ],\r\n  \"provinceId\": \"11\",\r\n  \"regencyId\": \"1122\",\r\n  \"districtId\": \"112233\",\r\n  \"villageId\": \"11223344\",\r\n  \"lattitude\": -7.405919,\r\n  \"longitude\": 108.278226,\r\n  \"fullAddress\": \"Jl. Sutisna Senjaya KM. 158A\",\r\n  \"description\": \"Berkah Tani Jaya merupakan supplier\",\r\n  \"website\": \"https://berkahtanijaya\",\r\n  \"socialMediaLinks\": [\r\n    \"https://instagram.com/hidayahapriliansyah\",\r\n    \"https://instagram.com/contohsocialmedialink\"\r\n  ],\r\n  \"email\": \"berkahtanijaya@gmail.com\",\r\n  \"password\": \"123berkahberkah123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/supplier",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"supplier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "supplier",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/supplier",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"supplier"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/supplier/{supplierId}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/supplier/{supplierId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"supplier",
+						"{supplierId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/supplier/{supplierId}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ownerName\": \"Firmansyah\",\r\n  \"businessName\": \"Berkah Tani Jaya\",\r\n  \"noHp\": \"08123456789\",\r\n  \"avatarProfile\": \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\",\r\n  \"heroImage\": \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\",\r\n  \"imageGallery\": [\r\n    \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\",\r\n    \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\",\r\n    \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\"\r\n  ],\r\n  \"provinceId\": \"11\",\r\n  \"regencyId\": \"1122\",\r\n  \"districtId\": \"112233\",\r\n  \"villageId\": \"11223344\",\r\n  \"lattitude\": -7.405919,\r\n  \"longitude\": 108.278226,\r\n  \"fullAddress\": \"Jl. Sutisna Senjaya KM. 158A\",\r\n  \"description\": \"Berkah Tani Jaya merupakan supplier\",\r\n  \"website\": \"https://berkahtanijaya\",\r\n  \"socialMediaLinks\": []\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/supplier/{supplierId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"supplier",
+						"{supplierId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/supplier/{supplierId}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/supplier/{supplierId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"supplier",
+						"{supplierId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/producer/{producerId}/email",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"berkahtanijayabaru@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/producer/{producerId}/email",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"producer",
+						"{producerId}",
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/producer/{producerId}/email",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"berkahtanijayabaru@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-test.amatrace.com//admin/producer/{producerId}/password",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"",
+						"admin",
+						"producer",
+						"{producerId}",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/warehouse",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"ownerName\": \"Firmansyah\",\r\n  \"businessName\": \"Berkah Tani Jaya\",\r\n  \"noHp\": \"08123456789\",\r\n  \"avatarProfile\": \"ttps://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\",\r\n  \"heroImage\": \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\",\r\n  \"imageGallery\": [\r\n    \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\",\r\n    \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\",\r\n    \"https://storage.googleapis.com/avatar/supplier/avatarsupplier.jpg\"\r\n  ],\r\n  \"provinceId\": \"11\",\r\n  \"regencyId\": \"1122\",\r\n  \"districtId\": \"112233\",\r\n  \"villageId\": \"11223344\",\r\n  \"lattitude\": -7.405919,\r\n  \"longitude\": 108.278226,\r\n  \"fullAddress\": \"Jl. Sutisna Senjaya KM. 158A\",\r\n  \"description\": \"Berkah Tani Jaya merupakan supplier\",\r\n  \"website\": \"https://berkahtanijaya\",\r\n  \"socialMediaLinks\": [\r\n    \"https://instagram.com/hidayahapriliansyah\",\r\n    \"https://instagram.com/contohsocialmedialink\"\r\n  ],\r\n  \"email\": \"berkahtanijaya@gmail.com\",\r\n  \"password\": \"123berkahberkah123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/warehouse",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"warehouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/warehouse",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/warehouse",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"warehouse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/warehouse/{warehouseId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/warehouse/{warehouseId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"warehouse",
+						"{warehouseId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/warehouse/{warehouseId}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/warehouse/{warehouseId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"warehouse",
+						"{warehouseId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/warehouse/{warehouseId}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/warehouse/{warehouseId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"warehouse",
+						"{warehouseId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/warehouse/{warehouseId}/email",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/warehouse/{warehouseId}/email",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"warehouse",
+						"{warehouseId}",
+						"email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/warehouse/{warehouseId}/password",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/warehouse/{warehouseId}/password",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"warehouse",
+						"{warehouseId}",
+						"password"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/claim-total-request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/claim-total-request",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"claim-total-request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/claim",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/claim",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"claim"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/claim",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/admin/claim",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"admin",
+						"claim"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/claim/detail/{claimId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/claim/detail/{claimId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"claim",
+						"detail",
+						"{claimId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/claim/{claimId}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/claim/{claimId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"claim",
+						"{claimId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/claim/{claimId}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/claim/{claimId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"claim",
+						"{claimId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/claim/request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/claim/request",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"claim",
+						"request"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/claim/request/{requestId}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/claim/request/{requestId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"claim",
+						"request",
+						"{requestId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/claim/request/{requestId}",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/claim/request/{requestId}",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"claim",
+						"request",
+						"{requestId}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/image/supplier/profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/image/supplier/profile",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"image",
+						"supplier",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/image/supplier/gallery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/admin/image/supplier/gallery",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"admin",
+						"image",
+						"supplier",
+						"gallery"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/image/warehouse/profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/image/warehouse/profile",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"image",
+						"warehouse",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/image/producer/profile",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://api-test.amatrace.com/admin/image/producer/profile",
+					"protocol": "https",
+					"host": [
+						"api-test",
+						"amatrace",
+						"com"
+					],
+					"path": [
+						"admin",
+						"image",
+						"producer",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/image/producer/gallery",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}/admin/image/producer/gallery",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"admin",
+						"image",
+						"producer",
+						"gallery"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
